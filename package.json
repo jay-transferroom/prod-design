@@ -1,0 +1,49 @@
+{
+    "name": "transferroom",
+    "version": "0.0.1",
+    "description": "A UX forum for testing new ideas.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Jay Hughes",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome": "^1.1.5",
+        "@hapi/hoek": "^11.0.4",
+        "async": "^3.2.5",
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.19.0",
+        "bootstrap": "^5.3.3",
+        "browser-sync": "^3.0.2",
+        "connect-flash": "^0.1.1",
+        "cors": "^2.8.4",
+        "del": "^7.1.0",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "gulp": "^5.0.0",
+        "gulp-cli": "^3.0.0",
+        "gulp-sass": "^5.1.0",
+        "jquery": "^3.6.0",
+        "jsonfile": "^6.1.0",
+        "method-override": "^3.0.0",
+        "mongoose": "^8.4.3",
+        "node-sass": "^9.0.0",
+        "nodemailer": "^6.9.14",
+        "nodemailer-smtp-transport": "^2.4.2",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^8.0.0",
+        "popper.js": "^1.16.1",
+        "sass": "^1.77.6",
+        "sendmail": "^1.6.1",
+        "slugify": "^1.5.3",
+        "xoauth2": "^1.2.0"
+    },
+    "devDependencies": {
+        "gulp-sass": "5.1.0"
+    }
+}

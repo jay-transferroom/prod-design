@@ -1,0 +1,86 @@
+.nav {
+    display:none;
+    position: relative;
+    right: 5px;
+}
+.nav, nav.search {
+    background-color: white;
+    background: var(--core-background-default, #FFF);
+    height: 100%;
+    width: 100%;
+    li {
+        width: 100%;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        padding: 1rem 0;
+        text-align: left;
+        border-bottom: 1px solid $border;
+        background: var(--base-white, #FFF);
+        padding-left: 1rem;
+        img {
+            margin-right: 0.5rem;
+        }
+        a {
+            color: $coreContentDefault;
+        }
+        &.selected, &:hover {
+            border-right: 4px solid $primary;
+            background-color: #F9FAFB;
+        }
+        .create {
+            width: 100%;
+        }
+    }
+}
+.search {
+    width: 100%;
+    display: flex;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    padding: 1rem 0;
+    text-align: left;
+    border-bottom: 1px solid #EAECF0;
+    background: var(--base-white, #FFF);
+    padding-left: 1rem;
+    img {
+        margin-right: 0.6rem;
+    }
+    input {
+        margin-bottom: 0;
+        padding: 0.2rem 0;
+        border: none;
+        outline: none;
+        width: calc(100% - 25px);
+        background: transparent;
+    }
+}
+.hamburger {
+    position: relative;
+    .McButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -11px;
+        margin-top: -11px;
+        width: 22px;
+        height: 16px;
+        cursor: pointer;
+        
+        b {
+          position: absolute;
+          left: 0;
+          width: 22px;
+          height: 3px;
+          background-color: $coreContentDefault;
+          &:nth-child(1) {
+            top: 0;
+          }
+          &:nth-child(2) {
+            top: 50%;
+          }
+          &:nth-child(3) {
+            top: 100%;
+          }
+        }
+    }
+}

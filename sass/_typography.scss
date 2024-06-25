@@ -1,0 +1,64 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: inherit;
+    font-family: 'Lato', sans-serif;
+    color: $primary;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 55px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+h4 {
+    font-size: 23px;
+    line-height: 33px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #232333;
+    text-align: left;
+    &.small {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &.large {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &.xlarge {
+        font-size: 21px;
+        line-height: 31px;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+
+h3 {
+    span {
+        text-transform: capitalize;
+    }
+}
+
+@include media-breakpoint-up(lg) {}

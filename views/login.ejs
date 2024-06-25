@@ -1,0 +1,43 @@
+<% include ./partials/header %>
+
+    <main id="swup" class="transition-fade">
+
+        <section class="register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 login-form">
+
+                        <div class="headless-logo">
+                            <img src="/img/etonx.png" />
+                        </div>
+
+                        <form action="/login" method="POST">
+                            <% if (typeof errorEmail === true || errorEmail) { %>
+                                <p class="error">We've already got a Student registered with the email address
+                                    <%= errorEmail %>. Please sign in below.</p>
+                                <input id="email" type="hidden" value=" <%= purchaseID %>" />
+                                <% } %>
+                                    <p class="error">
+                                        <%= errorMessage %>
+                                    </p>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input id="email" class="form-control" type="email" name="username" placeholder="johh.smith@email.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input class="form-control" type="password" name="password" placeholder="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+                                    </div>
+                                    <div class="reset-register">
+                                        <a href="/forgot">Reset Password</a>
+                                        <hr />
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <% include ./partials/footer %>

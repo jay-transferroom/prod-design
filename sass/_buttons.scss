@@ -1,0 +1,56 @@
+.btn {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    &.large {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &.xlarge {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    &:hover {
+        background-color: $secondary;
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    color: $primary;
+}
+
+.btn-tertiary {
+    background-color: $white;
+    color: $primary;
+}
+
+.btn-gold {
+    background-color: gold;
+    color: $primary;
+}
+
+.btn-quaternary {
+    background-color: orange;
+    color: white;
+}
+
+.btn-small {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

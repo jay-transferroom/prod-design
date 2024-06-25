@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+
+hr {
+    border-top: 1px solid #e8e7e7;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+a {
+    color: $primary;
+    text-decoration: underline;
+    &:hover {
+        color: $secondary;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+    }
+}
+
+.align-right {
+    text-align: right;
+}
