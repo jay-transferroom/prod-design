@@ -3,10 +3,29 @@ header {
     width: 100%;
     display: flex;
     padding: 2rem 1.5rem;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid #EAECF0;
+    flex-wrap: nowrap;
+    flex-direction: row;
     .search {
         display: none;
+    }
+
+}
+@include media-breakpoint-up(md) {
+    header {
+        .search {
+            display: flex;
+            width: 564px;
+            padding: 10px 16px;
+            border-radius: 72px;
+            border: 1px solid #EAECF0;
+            background: #FCFCFD;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+        }
     }
 }

@@ -2,15 +2,26 @@ const $checkForm = $("#check-form");
 const $purchaseForm = $("#purchase-form");
 const $registerForm = $("#register-form");
 const $nav = $("#nav");
+const $navExpand = $("#expand");
 
 var McButton = $("[data=hamburger-menu]");
 var McBar1 = McButton.find("b:nth-child(1)");
 var McBar2 = McButton.find("b:nth-child(2)");
 var McBar3 = McButton.find("b:nth-child(3)");
 
+$navHideShowElements = $nav.find('li span, button span');
+
+console.log($navHideShowElements);
+
+$navExpand.css('cursor', 'pointer');
+$navExpand.click( function() {
+    $(this).find('svg').toggleClass('flip');
+    $nav.toggleClass('open');
+    $navHideShowElements.toggleClass('show');
+});
+
 McButton.click( function() {
   $(this).toggleClass("active");
-  
   
   if (McButton.hasClass("active")) {
     $nav.slideDown();
