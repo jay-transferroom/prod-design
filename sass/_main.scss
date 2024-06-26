@@ -8,10 +8,28 @@ header {
     border-bottom: 1px solid #EAECF0;
     flex-wrap: nowrap;
     flex-direction: row;
+    .user-profile {
+        span {
+            display: none;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
     .search {
         display: none;
     }
+    .hamburger {
+        position: absolute;
+        right: 50px;
+    }
 
+}
+.container-fluid {
+    .row {
+        height: 100%;    
+    }
+    height: calc(100% - 80px);
 }
 @include media-breakpoint-up(md) {
     header {
@@ -27,5 +45,14 @@ header {
             justify-content: center;
             margin: 0 auto;
         }
+        .user-profile {
+            span {
+                display: block;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
     }
 }
+

@@ -21,7 +21,7 @@
 .nav, nav.search {
     background-color: white;
     background: var(--core-background-default, #FFF);
-    height:calc(100% - 80px);
+    height: 100%;
     width: 100%;
     ul {
         width: 100%;
@@ -190,3 +190,4 @@
         }
     }
 }
+

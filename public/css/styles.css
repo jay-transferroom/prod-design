@@ -12153,7 +12153,7 @@ table tr th {
 .nav, nav.search {
   background-color: white;
   background: var(--core-background-default, #FFF);
-  height: calc(100% - 80px);
+  height: 100%;
   width: 100%;
 }
 .nav ul, nav.search ul {
@@ -12332,8 +12332,25 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+header .user-profile span {
+  display: none;
+}
+header .user-profile img {
+  margin-right: 10px;
+}
 header .search {
   display: none;
+}
+header .hamburger {
+  position: absolute;
+  right: 50px;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  height: calc(100% - 80px);
+}
+.container-fluid .row, .container-sm .row, .container-md .row, .container-lg .row, .container-xl .row, .container-xxl .row {
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -12348,5 +12365,11 @@ header .search {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+  }
+  header .user-profile span {
+    display: block;
+  }
+  header .user-profile img {
+    margin-right: 10px;
   }
 }
