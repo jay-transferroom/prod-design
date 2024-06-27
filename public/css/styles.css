@@ -12155,6 +12155,7 @@ table tr th {
   background: var(--core-background-default, #FFF);
   height: 100%;
   width: 100%;
+  padding: 0;
 }
 .nav ul, nav.search ul {
   width: 100%;
